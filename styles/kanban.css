@@ -1,0 +1,43 @@
+.nav {
+  display: flex;
+  gap: 20px;
+  padding: 12px;
+  background: #111;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav .active {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
+.kanban-board {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+}
+
+.kanban-column {
+  background: #f4f4f4;
+  padding: 12px;
+  width: 300px;
+  border-radius: 8px;
+}
+
+.kanban-card {
+  background: white;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  cursor: grab;
+}
+
+@media (max-width: 768px) {
+  .kanban-board {
+    flex-direction: column;
+  }
+}
